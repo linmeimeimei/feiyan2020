@@ -15,7 +15,7 @@
 
 ## 界面截图
 
-![截图1](https://github.com/linmeimeimei/feiyan2020/blob/master/img/temp1.png)
-![截图2](https://github.com/linmeimeimei/feiyan2020/blob/master/img/temp2.jpg)
-![截图3](https://github.com/linmeimeimei/feiyan2020/blob/master/img/temp3.jpg)
-![截图4](https://github.com/linmeimeimei/feiyan2020/blob/master/img/temp4.jpg)
+![截图1](https://bizzare6.oss-cn-shanghai.aliyuncs.com/temp1.png)
+![截图2](https://bizzare6.oss-cn-shanghai.aliyuncs.com/temp2.png)
+![截图3](https://bizzare6.oss-cn-shanghai.aliyuncs.com/temp3.png)
+![截图4](https://bizzare6.oss-cn-shanghai.aliyuncs.com/temp4.png)

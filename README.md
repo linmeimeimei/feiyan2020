@@ -15,7 +15,7 @@
 
 ## 界面截图
 
-![截图1](https://github.com/linmeimeimei/feiyan2020/raw/master/img/temp1.png)
-![截图2](https://github.com/linmeimeimei/feiyan2020/raw/master/img/temp2.png)
-![截图3](https://github.com/linmeimeimei/feiyan2020/raw/master/img/temp3.png)
-![截图4](https://github.com/linmeimeimei/feiyan2020/raw/master/img/temp4.png)
+![截图1](https://github.com/linmeimeimei/feiyan2020/blob/master/img/temp1.png)
+![截图2](https://github.com/linmeimeimei/feiyan2020/blob/master/img/temp2.png)
+![截图3](https://github.com/linmeimeimei/feiyan2020/blob/master/img/temp3.png)
+![截图4](https://github.com/linmeimeimei/feiyan2020/blob/master/img/temp4.png)

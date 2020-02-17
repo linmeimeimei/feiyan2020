@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="./js/echarts.all.js" ></script>
+		<script src="https://mat1.gtimg.com/news/images/inews/2020/feiyan/18/libs/jquery.js" charset="utf-8"></script>
+	</head>
+	<body>
+		
+<div id="main" style="height: 800px;width:1200px;background:white;margin:20px 0 0;"></div>
+
+	</body>
+	<script>
+		function randomData() {  
+		     return Math.round(Math.random()*500);  
+		} 
+		var mapChart = echarts.init(document.getElementById("main"));
+		    var mapoption = {
+		        title : {
+		            text: 'iphone销量',
+		            subtext: '纯属虚构',
+		            x:'center'
+		        },
+		        tooltip: {
+					 triggerOn:"click",    
+			     	formatter: function (params) {
+			             var info = '地区：' + params.name + '<br>确诊：'+params.data.value+'';
+			             return info;
+			         },
+			       
+			     },
+		        dataRange: {  
+			                 show : true,  
+			                 x: 'left',  
+			 				hoverLink:true,
+			                 splitList: [   
+			                     {start: 10000},{start: 1000, end: 9999},  
+			                     {start: 500, end: 999},{start: 100, end: 499},  
+			                     {start: 10, end: 99},{start: 1, end: 9},  
+			                 ],  
+			                 color: ['#9c0a0d', '#c91014', '#e64b47','#fe8664', '#ffd2a0', '#ffefd7']  
+			             }, 
+		       
+		       
+		        series : [
+		            {
+		                name: 'iphone3',
+		                type: 'map',
+		                mapType: 'china',
+		                roam: false,
+		                itemStyle:{
+		                    normal:{label:{show:true}},
+		                    emphasis:{label:{show:true}}
+		                },
+		                data:[
+		                    {name: '北京',value: Math.round(Math.random()*1000)},
+		                    {name: '天津',value: Math.round(Math.random()*1000)},
+		                    {name: '上海',value: Math.round(Math.random()*1000)},
+		                    {name: '重庆',value: Math.round(Math.random()*1000)},
+		                    {name: '河北',value: Math.round(Math.random()*1000)},
+		                    {name: '河南',value: Math.round(Math.random()*1000)},
+		                    {name: '云南',value: Math.round(Math.random()*1000)},
+		                    {name: '辽宁',value: Math.round(Math.random()*1000)},
+		                    {name: '黑龙江',value: Math.round(Math.random()*1000)},
+		                    {name: '湖南',value: Math.round(Math.random()*1000)},
+		                    {name: '安徽',value: Math.round(Math.random()*1000)},
+		                    {name: '山东',value: Math.round(Math.random()*1000)},
+		                    {name: '新疆',value: Math.round(Math.random()*1000)},
+		                    {name: '江苏',value: Math.round(Math.random()*1000)},
+		                    {name: '浙江',value: Math.round(Math.random()*1000)},
+		                    {name: '江西',value: Math.round(Math.random()*1000)},
+		                    {name: '湖北',value: Math.round(Math.random()*1000)},
+		                    {name: '广西',value: Math.round(Math.random()*1000)},
+		                    {name: '甘肃',value: Math.round(Math.random()*1000)},
+		                    {name: '山西',value: Math.round(Math.random()*1000)},
+		                    {name: '内蒙古',value: Math.round(Math.random()*1000)},
+		                    {name: '陕西',value: Math.round(Math.random()*1000)},
+		                    {name: '吉林',value: Math.round(Math.random()*1000)},
+		                    {name: '福建',value: Math.round(Math.random()*1000)},
+		                    {name: '贵州',value: Math.round(Math.random()*1000)},
+		                    {name: '广东',value: Math.round(Math.random()*1000)},
+		                    {name: '青海',value: Math.round(Math.random()*1000)},
+		                    {name: '西藏',value: Math.round(Math.random()*1000)},
+		                    {name: '四川',value: Math.round(Math.random()*1000)},
+		                    {name: '宁夏',value: Math.round(Math.random()*1000)},
+		                    {name: '海南',value: Math.round(Math.random()*1000)},
+		                    {name: '台湾',value: Math.round(Math.random()*1000)},
+		                    {name: '香港',value: Math.round(Math.random()*1000)},
+		                    {name: '澳门',value: Math.round(Math.random()*1000)}
+		                ]
+		            },
+		            {
+		                name: 'iphone4',
+		                type: 'map',
+		                mapType: 'china',
+		                itemStyle:{
+		                    normal:{label:{show:true}},
+		                    emphasis:{label:{show:true}}
+		                },
+		                data:[
+		                    {name: '北京',value: Math.round(Math.random()*1000)},
+		                    {name: '天津',value: Math.round(Math.random()*1000)},
+		                    {name: '上海',value: Math.round(Math.random()*1000)},
+		                    {name: '重庆',value: Math.round(Math.random()*1000)},
+		                    {name: '河北',value: Math.round(Math.random()*1000)},
+		                    {name: '安徽',value: Math.round(Math.random()*1000)},
+		                    {name: '新疆',value: Math.round(Math.random()*1000)},
+		                    {name: '浙江',value: Math.round(Math.random()*1000)},
+		                    {name: '江西',value: Math.round(Math.random()*1000)},
+		                    {name: '山西',value: Math.round(Math.random()*1000)},
+		                    {name: '内蒙古',value: Math.round(Math.random()*1000)},
+		                    {name: '吉林',value: Math.round(Math.random()*1000)},
+		                    {name: '福建',value: Math.round(Math.random()*1000)},
+		                    {name: '广东',value: Math.round(Math.random()*1000)},
+		                    {name: '西藏',value: Math.round(Math.random()*1000)},
+		                    {name: '四川',value: Math.round(Math.random()*1000)},
+		                    {name: '宁夏',value: Math.round(Math.random()*1000)},
+		                    {name: '香港',value: Math.round(Math.random()*1000)},
+		                    {name: '澳门',value: Math.round(Math.random()*1000)}
+		                ]
+		            },
+		            {
+		                name: 'iphone5',
+		                type: 'map',
+		                mapType: 'china',
+		                itemStyle:{
+		                    normal:{label:{show:true}},
+		                    emphasis:{label:{show:true}}
+		                },
+		                data:[
+		                    {name: '北京',value: Math.round(Math.random()*1000)},
+		                    {name: '天津',value: Math.round(Math.random()*1000)},
+		                    {name: '上海',value: Math.round(Math.random()*1000)},
+		                    {name: '广东',value: Math.round(Math.random()*1000)},
+		                    {name: '台湾',value: Math.round(Math.random()*1000)},
+		                    {name: '香港',value: Math.round(Math.random()*1000)},
+		                    {name: '澳门',value: Math.round(Math.random()*1000)}
+		                ]
+		            }
+		        ]
+		    };
+		    mapChart.setOption(mapoption);
+	</script>
+</html>
